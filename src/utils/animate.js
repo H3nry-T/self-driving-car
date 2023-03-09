@@ -1,5 +1,5 @@
 function animate() {
-  car.update();
+  car.update(road.border);
   canvas.height = window.innerHeight;
 
   context.save();

@@ -11,6 +11,8 @@ class Car {
     this.friction = 0.05;
 
     this.angle = 0;
+
+    this.sensor = new Sensor(this);
   }
 
   draw(context) {
@@ -22,9 +24,14 @@ class Car {
     context.rect(-this.width / 2, -this.height / 2, this.width, this.height);
     context.fill();
     context.restore();
+
+    this.sensor.draw(context);
   }
 
-  update() {
+  update(roadBorder) {
+
+    this.sensor.update(roadBorder); 
+
     if (this.controls.forward) {
       this.velocity += this.acceleration;
     }
@@ -34,6 +41,7 @@ class Car {
 
     this.#carVelocity();
     this.#carAngle();
+    this.sensor.update();
   }
 
   #carVelocity() {
