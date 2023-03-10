@@ -1,9 +1,25 @@
-body{
-    margin:0;
-    background:darkgray;
-    overflow:hidden;
-    text-align:center;
+body {
+  margin: 0;
+  background: #cdeef6;
+  overflow: hidden;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-#myCanvas{
-    background:lightgray;
+
+#myCanvas {
+  background: lightgray;
+}
+
+.header-container {
+  background-color: #03a9f4;
+  max-width: 60%;
+  border-radius: 2rem;
+  margin: 0 auto;
+
+  box-shadow: 0px 10px 20px 0px grey;
+}
+
+.header {
+  padding: 0.4rem;
 }
