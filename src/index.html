@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <div class="header-container">
             <h1 class="header">
@@ -11,13 +12,20 @@
             </h1>
         </div>
     </header>
-    <canvas id="myCanvas"></canvas>
-    <canvas id="networkCanvas"></canvas>
+    <main>
 
-
-    <script src="visualizer.js"></script>
-    <script src="network.js"></script>
-    <script src="sensor.js"></script>
+        <canvas id="myCanvas"></canvas>
+        <canvas id="networkCanvas"></canvas>
+        <div class="verticalButtons">
+            <button onclick="save()">💾</button>
+            <button onclick="discard()">🗑️</button>
+        </div>
+    </main>
+        
+        
+        <script src="visualizer.js"></script>
+        <script src="network.js"></script>
+        <script src="sensor.js"></script>
     <script src="utils.js"></script>
     <script src="road.js"></script>
     <script src="controls.js"></script>
