@@ -11,6 +11,10 @@ body {
   background: lightgray;
 }
 
+#networkCanvas {
+  background-color: black;
+}
+
 .header-container {
   background-color: #03a9f4;
   max-width: 60%;
